@@ -1,12 +1,21 @@
 {
-  "name": "replay-sdk",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "@vinisadev/replay-sdk",
+  "version": "1.1.0",
+  "main": "dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": "git@github.com:vinisadev/replay-sdk.git",
   "author": "Vincenzo Fehring <vinfehring@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsup"
+  },
   "devDependencies": {
     "@types/node": "^22.8.7",
+    "tsup": "^8.3.5",
     "typescript": "^5.6.3"
   }
 }
